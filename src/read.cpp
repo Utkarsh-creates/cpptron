@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <array>
+#include <matrix.hpp>
 using namespace std;
 using Matrix = array<array<double, 6>, 6>; //type alias
 
