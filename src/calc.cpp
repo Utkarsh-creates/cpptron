@@ -3,23 +3,25 @@
 #include "active.hpp"
 #include "interface.hpp"
 #include <array>
-double summation()
+using namespace std;
+using Array = array<double,6>;
+Array summation()
 {
     Matrix Dataset = data();
     double bias;
-    double sum = 0;
+    array<double,6> sum{};
 
     array<double, 5> weights{1.0, 1.0, 1.0, 1.0, 1.0};
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < 6; i++)
     {
-        sum=0;
+
 
         bias = 5;
         for (int j = 0; j < 5; j++)
         {
-            sum += Dataset[i][j] * weights[j];
+            sum[i]+= Dataset[i][j] * weights[j];
         }
-        sum += bias;
+        sum[i] += bias;
     }
     return sum;
 }
