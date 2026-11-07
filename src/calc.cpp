@@ -1,7 +1,9 @@
 #include <iostream>
 #include "matrix.hpp"
+#include "active.hpp"
+#include "interface.hpp"
 #include <array>
-double perceptron()
+double summation()
 {
     Matrix Dataset = data();
     double bias;
@@ -18,7 +20,28 @@ double perceptron()
             sum += Dataset[i][j] * weights[j];
         }
         sum += bias;
-        cout << "Result is" << sum;
     }
     return sum;
+}
+
+double Active(int choice, double value){
+double out=0;
+switch (choice){
+    case 0:
+    out=ReLu(value);
+    break;
+
+    case 1:
+    out=sigm(value);
+    break;
+
+    case 2:
+    out=step(value);
+    break;
+
+    case 3:
+    out=tanh_active(value);
+    break;
+}
+return out;
 }
