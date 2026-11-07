@@ -10,8 +10,6 @@ int main(){
     for(int i=0;i<6;i++){
         output= Active(x,sum[i]);
         cout<<"\nResult of Forward pass "<<i<<" "<<output<<"\nSummation "<<sum[i];
-
-
     }
     
     return 0;

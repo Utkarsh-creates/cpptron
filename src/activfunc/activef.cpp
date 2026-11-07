@@ -24,7 +24,7 @@ int step(double sum)
         return 0;
     }
     else
-        return 0;
+        return 1;
 }
 double tanh_active(double sum)
 {
