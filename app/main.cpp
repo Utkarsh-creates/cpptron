@@ -1,6 +1,6 @@
 #include <iostream>
-#include "src/pt.hpp"
-#include "src/interface.hpp"
+#include "../include/cpptron/pt.hpp"
+#include "../include/cpptron/interface.hpp"
 #include <array>
 using matrix = array<double,6>;
 using namespace std;

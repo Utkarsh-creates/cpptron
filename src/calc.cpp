@@ -1,8 +1,8 @@
 #include <iostream>
-#include "matrix.hpp"
-#include "active.hpp"
-#include "interface.hpp"
-#include "pt.hpp"
+#include "../include/cpptron/matrix.hpp"
+#include "../include/cpptron/active.hpp"
+#include "../include/cpptron/interface.hpp"
+#include "../include/cpptron/pt.hpp"
 #include <array>
 using namespace std;
 using Array = array<double,6>;

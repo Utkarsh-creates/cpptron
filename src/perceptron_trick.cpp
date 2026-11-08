@@ -1,7 +1,7 @@
 #include <iostream>
 #include <array>
-#include "pt.hpp"
-#include "matrix.hpp"
+#include "../include/cpptron/pt.hpp"
+#include "../include/cpptron/matrix.hpp"
 using namespace std;
 using wmat = array<double,6>;
 wmat perceptrontrick(int x){

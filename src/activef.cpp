@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cmath>
-#include "../active.hpp"
+#include "../include/cpptron/active.hpp"
 double ReLu(double sum)
 {
     if (sum > 0)
